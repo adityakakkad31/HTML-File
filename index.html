@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bhawandas and Sons</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5dc; /* Beige */
+      color: #000;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 20px auto;
+      background-color: #fff8dc;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    }
+
+    nav {
+      background-color: #000;
+      color: #f5f5dc;
+      padding: 15px 0;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      border-radius: 6px 6px 0 0;
+    }
+
+
+
+    nav a {
+      color: #f5f5dc;
+      text-decoration: none;
+      padding: 12px 25px;
+      display: block;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      background-color: #222;
+    }
+
+    .hero {
+  text-align: center;
+  padding: 50px 20px;
+  background-image: url('https://www.tradeuno.com/cdn/shop/products/image_a6cd1602-2358-4905-8358-f2c2f4111047.jpg'); /* Replace with your image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  color: #000; 
+}
+
+    
+
+    .hero h1 {
+      font-size: 3em;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      font-size: 1.2em;
+    }
+
+    .about, .products, .contact {
+      padding: 30px 0;
+      border-top: 1px solid #ddd;
+    }
+
+    .about h2, .products h2, .contact h2 {
+      margin-bottom: 20px;
+      text-align: center;
+      font-size: 2.2em;
+    }
+
+    .product-container {
+      overflow: hidden;
+      position: relative;
+    }
+
+    .product-grid {
+      display: flex;
+      gap: 20px;
+      padding: 20px;
+      animation: scroll-left 40s linear infinite;
+    }
+
+    @keyframes scroll-left {
+      0% {
+        transform: translateX(100%);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+
+    .product-item {
+      border: 1px solid #ccc;
+      padding: 20px;
+      border-radius: 8px;
+      text-align: center;
+      min-width: 220px;
+      background-color: #fffaf0;
+    }
+
+    .product-item img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 6px;
+      margin-bottom: 15px;
+    }
+
+    .product-item h3 {
+      font-size: 1.3em;
+      margin-bottom: 8px;
+    }
+
+    .contact-form {
+      margin-top: 30px;
+      padding: 25px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      background-color: #f9f9f9;
+    }
+
+    .contact-form label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: bold;
+    }
+
+    .contact-form input[type="text"],
+    .contact-form input[type="email"],
+    .contact-form textarea {
+      width: calc(100% - 16px);
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 1em;
+    }
+
+    .contact-form button {
+      background-color: #000;
+      color: #f5f5dc;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 1.1em;
+    }
+
+    .contact-form button:hover {
+      background-color: #222;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 30px;
+      background-color: #000;
+      color: #f5f5dc;
+      border-radius: 0 0 8px 8px;
+      font-size: 0.9em;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        margin: 10px;
+        padding: 20px;
+      }
+
+      nav {
+        flex-direction: column;
+      }
+
+      nav a {
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+        border-bottom: 1px solid #444;
+      }
+
+      .product-grid {
+        animation-duration: 60s;
+      }
+
+      .product-item {
+        min-width: 180px;
+        padding: 15px;
+      }
+
+      .contact-form {
+        padding: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About Us</a>
+      <a href="#products">Products & Services</a>
+      <a href="#contact">Contact Us</a>
+    </nav>
+
+    <section id="home" class="hero">
+      <h1>Welcome to Bhawandas and Sons</h1>
+      <p>Your trusted source for quality raw cloth, exquisite sarees, undergarments, tailoring, and more in Sardarshahr.</p>
+      <img src="" alt="" style="max-width: 100%; height: auto; border-radius: 8px; margin-top: 20px;">
+    </section>
+
+    <section id="about" class="about">
+      <h2>About Bhawandas and Sons</h2>
+      <p>Bhawandas and Sons has proudly served the Sardarshahr community for over <strong>6</strong> years. What began as a humble family-run shop has now grown into a trusted destination for high-quality clothing and tailoring services. Known for our commitment to customer satisfaction, we offer an extensive range of products including raw cloth, designer sarees, ethnic wear, blazers, kurtas, and accessories. Whether you're shopping for everyday essentials or preparing for a special occasion, Bhawandas and Sons has something for everyone.</p>
+      <p>Our expert tailors bring decades of craftsmanship to every stitch, ensuring each garment fits perfectly and reflects your style. We also stay updated with the latest fashion trends to bring modern styles to our local community without compromising on comfort and quality.</p>
+  <p>Visit our welcoming store in the heart of Sardarshahr to experience personalized service, affordable prices, and a wide selection of apparel that suits all ages and tastes.</p>
+      <img src="" alt="" style="max-width: 100%; height: auto; border-radius: 8px; margin-top: 20px;">
+    </section>
+
+    <section id="products" class="products">
+      <h2>Our Products and Services</h2>
+      <div class="product-container">
+        <div class="product-grid">
+          <div class="product-item"><img src="https://i.etsystatic.com/23796818/r/il/4f480a/3827080202/il_fullxfull.3827080202_h1vf.jpg"><h3>Raw Cloth</h3><p>Premium textures and colors.</p></div>
+          <div class="product-item"><img src="https://www.vishalprints.in/cdn/shop/files/AISHWARYA_3-49532-01_c3fbcfb3-a376-429d-8d98-63837b96c378.jpg?v=1719111210"><h3>Exquisite Sarees</h3><p>For every celebration.</p></div>
+          <div class="product-item"><img src="https://5.imimg.com/data5/SELLER/Default/2021/4/CT/CK/BE/18187732/men-shirt-stitching-service.jpg" alt="Stitching"><h3>Stitching Services</h3><p>Perfect fitting tailoring.</p></div>
+          <div class="product-item"><img src="https://domin8active.com/cdn/shop/files/154A1606_ea87e82c-40ca-44ff-a09c-f08e80cda8b6.jpg?v=1744888700" alt="T-Shirts"><h3>Stylish T-shirts</h3><p>Trendy & comfortable.</p></div>
+          <div class="product-item"><img src="https://i.etsystatic.com/11213256/r/il/70440d/4155803767/il_570xN.4155803767_i7ye.jpg" alt="Socks"><h3>Cozy Socks</h3><p>Soft and warm.</p></div>
+          <div class="product-item"><img src="https://pictures.kartmax.in/live/sites/9s145MyZrWdIAwpU0JYS/product-images/bright_yellow_festive_wear_kurta_suit_in_cotton_silk_16528671919951_yellow.jpg"><h3>Kurtas</h3><p>Elegant ethnic wear.</p></div>
+          <div class="product-item"><img src="https://frenchcrown.in/cdn/shop/products/BL2303-DB_8.jpg?v=1693652263&width=3600" alt="Blazers"><h3>Blazers</h3><p>Formal & stylish.</p></div>
+          <div class="product-item"><img src="https://i.pinimg.com/564x/ba/42/32/ba42328355c279976e78c2c157e7c250.jpg"><h3>Ethnic Wear</h3><p>Celebrate tradition.</p></div>
+          <div class="product-item"><img src="https://row.2tall.com/cdn/shop/files/Jeans_202t_20Ross_20Regular_20Bright_20Blue_20LS.jpg?v=1735573178&width=600" alt="Jeans"><h3>Jeans</h3><p>Durable & fashionable.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>Contact Us</h2>
+      <p style="text-align: center;">We'd love to hear from you! Fill out the form below or visit our store in Sardarshahr.</p>
+      <div class="contact-form">
+        <form action="#" method="POST">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+      <p> Address: Old Bikaner Bus Stand, Near Railway Station, Sardarshahar, Rajasthan 331403 <BR>
+        Phone: +91 9024808018 <BR>
+    
+     </p>
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Bhawandas and Sons. All rights reserved.</p>
+  </footer>
+</body>
+</html>
